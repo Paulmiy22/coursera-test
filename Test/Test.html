@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment</title>
+	<style>
+body {
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.box {
+	margin-top: 10px;
+	width: 31%;
+	border: 3px solid  black;
+	background-color: gray;
+	height: 150px;
+	/*position: relative;*/
+}
+
+.menu_item_header {
+	margin-right: 0;
+	margin-left: auto;
+	/*position: absolute;
+	top: 0;
+	right:  0;*/
+	width: fit-content;
+	border-left: 3px solid black;
+	border-bottom: 3px solid black;
+	width: 80px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.menu_item_header__1 {
+	background-color: pink;
+	color: black;
+}
+
+.menu_item_header__2 {
+	background-color: red;
+	color: white;
+}
+
+.menu_item_header__3 {
+	background-color: yellow;
+	color: black;
+}
+
+.content {
+	margin: 10px 8px 5px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.box__1, .box__2 {
+		width: 48%;
+	}
+
+	.box__3 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		flex-direction: column;
+		align-content: center;
+	}
+	.box {
+		width: 100%;
+	}
+}
+
+	</style>
+</head>
+<body>
+	<h1> Our Menu</h1>
+	<div class="container">
+		<div class="box box__1">
+			<div class="menu_item_header menu_item_header__1">Chicken</div>
+			<div class="content"> Chicken is always cooked fresh, never frozen. Then it’s honey dipped, hand breaded in our special blend of herbs and spices and pressure cooked to seal in the flavor that put Lee’s on the map in the first place.</div>
+		</div>
+
+		<div class="box box__2">
+			<div class="menu_item_header menu_item_header__2">Beef</div>
+			<div class="content">Beef is divided into large sections called primal cuts, which you can see in our beef cuts chart.Add the beef and carrots back to the casserole, or slice the beef and bring to the table </div>
+		</div>
+
+		<div class="box box__3">
+			<div class="menu_item_header menu_item_header__3">Suchi</div>
+			<div class="content">sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold. </div>
+		</div>
+	</div>
+</body>
